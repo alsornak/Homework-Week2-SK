@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+body {
+    background-color: white;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #33393f;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 43px;
+    margin-left: -20px;
+}
+
+.header h1 {
+    color: #33393f;
+    background-color:#2aefcb;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+a {
+    color: #2aefcb;
+    
+}
+
+p {
+    font-size: 16px;
+}
+
+.header div .headback h1{
+    width: 400px;
+    height: 200px;
+    background-color: #2aefcb;
+    color: #33393f;
+}
+
+.container {
+    position: relative;
+  }
+  
+  .bottomright {
+    position: absolute;
+    bottom: 140px;
+    right: 50px;
+    font-size: 18px;
+    color: #33393f;
+    background-color:#2aefcb;
+    padding: 25px 30px;
+  }
+  .centertext{
+    top: 50px;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    color: #33393f;
+    background-color:#2aefcb;
+    padding:10px;
+    
+  }
+  
+  img { 
+    width: 100%;
+    height: 400px;
+
+  }
+  .content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: white;
+    border-left: 3px solid rgb(18, 141, 212);
+    padding: 15px 10px;
+}
+
+.desc {
+    /* margin-right: 20px; */
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: rgb(18, 141, 212);
+}
+.inner-content {
+    /* margin-bottom: 20px; */
+    padding: 10px; 
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    color: black;
+}
+
+.title{
+    margin-left: 100px;
+}
+.space{
+    height:200px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 75px;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  
+  .card-column {
+    flex: 1 0 100%;
+    padding: 20px 10px;
+    transition: flex-basis 500ms linear;
+  }
+  
+  /*.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--heliotrope);    
+  }*/
+  
+  
+  .card-column div {
+    white-space: pre-wrap;   
+    display: flex;
+  }
+  
+  
+  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+  @media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
