@@ -49,7 +49,7 @@ body {
 
 }
 
-a {
+.header div ul li a {
     color: #2aefcb;
     
 }
@@ -114,6 +114,7 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
+    font-size: 24px;
     color: rgb(18, 141, 212);
 }
 .inner-content {
@@ -123,6 +124,15 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #ffffff;
     color: black;
+}
+
+.cinner-content {
+  /* margin-bottom: 20px; */
+  padding: 10px; 
+  height: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ffffff;
+  color: black;
 }
 
 .title{
@@ -163,19 +173,75 @@ p {
     white-space: pre-wrap;   
     display: flex;
   }
-  
-  
-  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+  .content .cinner-content .cme li {
+    list-style-type: none;
+    display: inline-block;   
+    tab-size: 4; 
+    padding: 0px 35px;
+    margin-left: 10px;;
+  }
+
+  .content .cinner-content .cme li a{
+    color: rgb(18, 141, 212);
+    font-size: 20px;
+    font-weight: bold;
+  }  
+
+  .imgtext{
+    position:absolute;
+    top: 80px;
+    left: 0px;
+    padding: 15px 0px;
+    font-size: 18px;
+    color: #33393f;
+    background-color:#2aefcb;
+}
+  .inner-content .container img{
+    opacity: 0.5;
+  }
+
+  .inner-content .container img:hover{
+    opacity: 1;
+    flex-grow: 1;
+  }
+
+  .code-block .container img{
+    opacity: 0.5;
+  }
+
+  .code-block .container img:hover{
+    opacity: 1;
+    flex-grow: 1;
+  }
+   
   @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
     .card-column {
       flex: 0 0 50%;
       max-width: 50%;
     }
   
-    /* select the last child to grow to full width if it has space to grow */
     .card-column:last-child {
       flex-grow: 1;
     }
   }
+  @media screen and (max-width: 768px) {
+    header, main,
+    nav {
+      flex-direction: column;
+    }
+    .container{
+      margin-top: 50px;
+    }
+    .content-desc{
+      flex-direction: column;
+    }
+    .content{
+      border-left: none;
+    }
+    .desc{
+      margin-left: 50%;
+      width: 100%;
+    }    
+  }
+  
   

@@ -15,39 +15,36 @@
 <body>
 <!-- Header -->
 <header>      
-    <nav>
-             <!-- Class attribute with name "div" -->
-        <div class="header">
-                <h1>Sorna Kesavan</h1>
-            <div>
-                <ul>
-                    <li>
-                        <!--Anchor tags using href to link to external website-->
-                        <a href="#About-Me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#Work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#Contact-Me">Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#Resume">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="header">
+        <h1>Sorna Kesavan</h1>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#About-Me">About Me</a>
+                </li>
+                <li>
+                    <a href="#Work">Work</a>
+                </li>
+                <li>
+                    <a href="#Contact-Me">Contact Me</a>
+                </li>
+                <li>
+                    <a href="#Contact-Me">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
 </header>
 <main>
-        <section>
+    <section>
             <div class="container">
                 <img src="./Assets/images/technology-ge2d8d4465_1920.jpg" alt="Tech" width="1000" height="300">
                 <div class="bottomright">Web Developer</div>
               </div>
 
-        
-    <section>
+    <section class = "content-desc">
         <div class="desc">
     
              <div id ="About-Me" class="title">
@@ -69,7 +66,7 @@
 
     <br><br>
 
-    <section>
+    <section class = "content-desc">
             <div class="desc">
             
                  <div id ="Work" class="title">
@@ -82,10 +79,13 @@
         <section>
             <div class="content">
                 <div class="inner-content">
-                    <!--<div class="container"> -->
-                    <a href="#"><img id = " bimg" src="./Assets/images/snowflake-background-g5af23d127_1920.jpg" alt="Tech" ></a>
-                    <!--<div class="centertext">Javascript</div>
-              </div>-->
+                    <div class="container"> 
+                        <a href="#"><img id = " bimg" src="./Assets/images/snowflake-background-g5af23d127_1920.jpg" alt="Tech" ></a>
+                        <div class = "imgtext">
+                            <h3 class = "imgtext"><a href="#">Javascript</a></h3>
+                        </div>
+                    <!--<div class="centertext">Javascript</div>-->
+                    </div>
                 </div>
 
             <div class="space"></div>
@@ -93,50 +93,90 @@
             <section class="row justify-center">
                 <div class="card-column">                  
                     <div class="code-block">
-                        <!--<div class="container">-->
+                        <div class="container">
                         <a href="#"><img id = " bimg" src="./Assets/images/cookie-tin.jpg" alt="Tech" > </a>
-                       <!-- <div class="centertext">HTML</div>
-              </div>-->
+                        <div class = "imgtext">
+                            <h3 class = "imgtext"><a href ="#">HTML(Cookies Project)</a></h3>
+                        </div>
+                       <!-- <div class="centertext">HTML</div>-->
+                        </div>
                     </div>                  
                 </div>
 
                 <div class="card-column">                    
                     <div class="code-block">
-                        <!--<div class="container">-->
+                        <div class="container">
                         <a href="#"><img id = " bimg" src="./Assets/images/social-media-marketing.jpg" alt="Tech" >   </a>
-                       <!-- <div class="centertext">CSS</div>
-              </div>-->
+                        <div class = "imgtext">
+                            <h3 class = "imgtext"><a href = "#">CSS</a></h3>
+                        </div>
+                       <!-- <div class="centertext">CSS</div>-->
+                        </div>
                     </div>                 
                   </div>
             </section>
 
-
             <section class="row justify-center">
                 <div class="card-column">                  
                     <div class="code-block">
-                        <!--<div class="container">-->
+                        <div class="container">
                         <a href="#"><img id = " bimg" src="./Assets/images/social-media-marketing.jpg" alt="Tech" >   </a>
-                       <!-- <div class="centertext">Jquery</div>
-              </div>-->
+                        <div class = "imgtext">
+                            <h3 class = "imgtext"><a href ="#">JAVA</a></h3>
+                        </div>
+                       <!-- <div class="centertext">Jquery</div>-->
+                        </div>
                     </div>                  
                 </div>
 
                 <div class="card-column">                    
                     <div class="code-block">
-                        <!--<div class="container">-->
+                        <div class="container">
                         <a href="#"><img id = " bimg" src="./Assets/images/snowflake-background-g5af23d127_1920.jpg" alt="Tech" >   </a>
-                       <!-- <div class="centertext">React</div>
-              </div>-->
+                        <div class = "imgtext">
+                            <h3 class = "imgtext"><a href = "#">REACT</a></h3>
+                        </div>
+                       <!-- <div class="centertext">React</div>-->
+                        </div>
                     </div>                 
                   </div>
             </section>      
             </div>      
+        </section>     
+        
         </section>
+        <br>
+        <section class = "content-desc">
+            <div class="desc">
+        
+                 <div id ="Contact-Me" class="title">
+                    
+                    <h2>Contact <br>Me</h2>
+                    
+                </div>  
+            </div>
+            <div class="content">
+                <div class="cinner-content">   
+         
+                    <ul class="cme">
+                        <li>
+                            <a href="#">04 56732453</a>
+                        </li>
+                        <li>
+                            <a href="#">asxd_rty@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#">Github</a>
+                        </li>
+                        <li>
+                            <a href="#">Linkedin</a>
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+            </section>
     </section>
-
-        
-        
-        </section>
     </main>
 </body>
 
