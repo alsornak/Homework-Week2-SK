@@ -31,13 +31,15 @@ header nav {
 }
 
 header nav ul {
-    list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
 }
 
 header nav ul li {
-    display: inline-block;
     margin-left: 25px;
-
 }
 
 header nav ul li a {
@@ -168,6 +170,12 @@ header nav ul li a {
   header nav{
     font-size: 18px;
   }  
+  header nav ul{
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
   .imgtext{
     bottom: 41%;
     font-size: 14px;
