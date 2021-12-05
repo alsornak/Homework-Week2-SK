@@ -139,8 +139,12 @@ header nav ul li a {
   .contact-details{
       list-style: none;
   }
-  .contact-details li{
-      display: inline-block;
+  .contact-details{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
   }
   .contact-details li a{
       color: rgb(18, 141, 212);
@@ -173,13 +177,17 @@ header nav ul li a {
   }
 .flex-inner-right, .flex-inner-left{
     flex: 100%;
-}  
+  }  
 }
 @media screen and (max-width: 450px){
     .flex-item-right{
         border-left: none;
     }
 }
-
+@media screen and (max-width: 1000px){
+  .contact-details{
+    flex-direction: column; 
+  }
+}
 
 
